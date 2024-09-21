@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>关于我搭了个GPT4网站 | CXの小栈</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://blog.deep-sea.us.kg/favicon.ico?v=1726888528688">
+<link rel="stylesheet" href="https://blog.deep-sea.us.kg/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+在我闲来无事冲浪时，突然发现深刻API网站内有个叫ChatGPT4的API
+
+
+而就在我点击请求示例后
+
+
+所以说就有了这篇文章
+
+以下为一个简简单单的调用代码
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://blog.deep-sea.us.kg">
+        <img src="https://blog.deep-sea.us.kg/images/avatar.png?v=1726888528688" class="site-logo">
+        <h1 class="site-title">CXの小栈</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/master-cx" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      <span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/master-cx" target="_blank">CX</a> | <a class="rss" href="https://blog.deep-sea.us.kg/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于我搭了个GPT4网站</h2>
+            <div class="post-date">2024-09-21</div>
+            
+              <div class="feature-container" style="background-image: url('https://blog.deep-sea.us.kg/post-images/guan-yu-wo-da-liao-ge-gpt4-wang-zhan.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <!-- more -->
+<p>在我闲来无事冲浪时，突然发现深刻API网站内有个叫ChatGPT4的API</p>
+<!-- more -->
+<p><img src="https://blog.deep-sea.us.kg/post-images/1726885679545.png" alt="" loading="lazy"><br>
+而就在我点击请求示例后<br>
+<img src="https://blog.deep-sea.us.kg/post-images/1726885746669.png" alt="" loading="lazy"><br>
+<img src="https://blog.deep-sea.us.kg/post-images/1726885886907.png" alt="" loading="lazy"><br>
+所以说就有了这篇文章</p>
+<!-- more -->
+<p>以下为一个简简单单的调用代码</p>
+<!-- more -->
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;ChatGPT&lt;/title&gt;
+&lt;script&gt;
+  alert('请安装CORS Everywhere浏览器插件，如果您已安装请无视')
+&lt;/script&gt;
+&lt;style&gt;
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f57f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .chat-container {
+    width: 1000px;
+    max-width: 360%;
+    background: rgba(255, 255, 255, 0.502);
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  #chatbox {
+    height: 400px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  .message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+  .user {
+    background-color: #d1e7dd81;
+    color: rgba(0, 0, 0, 0.491);
+    text-align: right;
+    margin-left: auto;
+  }
+  .bot {
+    background-color: #cfe2ff7e;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    margin-right: auto;
+  }
+  .input-container {
+    display: flex;
+    border-top: 1px solid #dddddd80;
+  }
+  #msgInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .send-button {
+    background-color: #0d6dfd;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .send-button:hover {
+    background-color: #0b5dd7;
+  }
+  .loading-indicator {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .loading-indicator.show {
+    display: block;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;chat-container&quot;&gt;
+  &lt;h2 style=&quot;text-align: center; background: #0d6dfd; color: rgb(255, 255, 255); padding: 10px; margin: 0;&quot;&gt;ChatGPT-4.0&lt;/h2&gt;
+  &lt;div id=&quot;chatbox&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;input-container&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;msgInput&quot; placeholder=&quot;请输入您的消息...&quot; style=&quot;width:100%;&quot;&gt;
+    &lt;button class=&quot;send-button&quot; onclick=&quot;sendMessage()&quot;&gt;发送&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;loading-indicator&quot; id=&quot;loadingIndicator&quot;&gt;正在加载中...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+const sessionId = '10086'; // 这里可以设置一个会话ID
+
+function sendMessage() {
+    var userInput = document.getElementById('msgInput').value;
+    if (userInput.trim() === '') return; // 如果没有输入则不发送
+    
+    addMessage(userInput, 'user');
+    
+    // 显示加载指示器
+    document.getElementById('loadingIndicator').classList.add('show');
+    
+    // 构造API请求
+    var apiUrl = `https://api.zrzh.asia/api/ChatGPT.php?message=${encodeURIComponent(userInput)}&amp;id=${sessionId}&amp;type=json`;
+    
+    fetch(apiUrl)
+        .then(response =&gt; {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json(); // 假设API返回json格式数据
+        })
+        .then(data =&gt; {
+            // 隐藏加载指示器
+            document.getElementById('loadingIndicator').classList.remove('show');
+            
+            // 根据API的实际响应结构解析并显示回复
+            if (data &amp;&amp; data.data &amp;&amp; data.data.content) {
+                addMessage(data.data.content, 'bot');
+            } else {
+                console.error(&quot;Unexpected response from the API:&quot;, data);
+                addMessage(&quot;[错误] 无法获取回复&quot;, 'bot');
+            }
+        })
+        .catch(error =&gt; {
+            // 隐藏加载指示器
+            document.getElementById('loadingIndicator').classList.remove('show');
+            
+            console.error('Error:', error); // 记录错误信息
+            addMessage(`[错误] 无法获取回复: ${error.message}`, 'bot');
+        });
+        
+    // 清空输入框
+    document.getElementById('msgInput').value = '';
+}
+
+function addMessage(text, sender) {
+    var chatbox = document.getElementById('chatbox');
+    var messageElement = document.createElement('div');
+    messageElement.className = 'message ' + sender;
+    messageElement.textContent = text;  // 使用textContent而不是content
+    chatbox.appendChild(messageElement);
+    chatbox.scrollTop = chatbox.scrollHeight; // 自动滚动到底部
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<!-- more -->
+<p>好了，使用时记得在浏览器中安装CORS Everywhere插件哦👾</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://blog.deep-sea.us.kg/post/zi-wo-jie-shao/">
+                  <h3 class="post-title">
+                    自我介绍
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
