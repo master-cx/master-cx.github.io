@@ -1,0 +1,327 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>关于我搭了个GPT4网站 | CXの小栈</title>
+
+<link rel="shortcut icon" href="https://blog.deep-sea.us.kg/favicon.ico?v=1731140278053">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://blog.deep-sea.us.kg/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            CXの小栈
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/archives" class="menu gt-a-link">
+                            归档
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1731140278053" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    关于我搭了个GPT4网站
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2024-09-21 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <!-- more -->
+<p>在我闲来无事冲浪时，突然发现深刻API网站内有个叫ChatGPT4的API</p>
+<!-- more -->
+<p><img src="https://blog.deep-sea.us.kg/post-images/1726885679545.png" alt="" loading="lazy"><br>
+而就在我点击请求示例后<br>
+<img src="https://blog.deep-sea.us.kg/post-images/1726885746669.png" alt="" loading="lazy"><br>
+<img src="https://blog.deep-sea.us.kg/post-images/1726885886907.png" alt="" loading="lazy"><br>
+所以说就有了这篇文章</p>
+<!-- more -->
+<p>以下为一个简简单单的调用代码</p>
+<!-- more -->
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;ChatGPT&lt;/title&gt;
+&lt;script&gt;
+  alert('请安装CORS Everywhere浏览器插件，如果您已安装请无视')
+&lt;/script&gt;
+&lt;style&gt;
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f57f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .chat-container {
+    width: 1000px;
+    max-width: 360%;
+    background: rgba(255, 255, 255, 0.502);
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  #chatbox {
+    height: 400px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  .message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+  .user {
+    background-color: #d1e7dd81;
+    color: rgba(0, 0, 0, 0.491);
+    text-align: right;
+    margin-left: auto;
+  }
+  .bot {
+    background-color: #cfe2ff7e;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    margin-right: auto;
+  }
+  .input-container {
+    display: flex;
+    border-top: 1px solid #dddddd80;
+  }
+  #msgInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  .send-button {
+    background-color: #0d6dfd;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .send-button:hover {
+    background-color: #0b5dd7;
+  }
+  .loading-indicator {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .loading-indicator.show {
+    display: block;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class=&quot;chat-container&quot;&gt;
+  &lt;h2 style=&quot;text-align: center; background: #0d6dfd; color: rgb(255, 255, 255); padding: 10px; margin: 0;&quot;&gt;ChatGPT-4.0&lt;/h2&gt;
+  &lt;div id=&quot;chatbox&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;input-container&quot;&gt;
+    &lt;input type=&quot;text&quot; id=&quot;msgInput&quot; placeholder=&quot;请输入您的消息...&quot; style=&quot;width:100%;&quot;&gt;
+    &lt;button class=&quot;send-button&quot; onclick=&quot;sendMessage()&quot;&gt;发送&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;loading-indicator&quot; id=&quot;loadingIndicator&quot;&gt;正在加载中...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+const sessionId = '10086'; // 这里可以设置一个会话ID
+
+function sendMessage() {
+    var userInput = document.getElementById('msgInput').value;
+    if (userInput.trim() === '') return; // 如果没有输入则不发送
+    
+    addMessage(userInput, 'user');
+    
+    // 显示加载指示器
+    document.getElementById('loadingIndicator').classList.add('show');
+    
+    // 构造API请求
+    var apiUrl = `https://api.zrzh.asia/api/ChatGPT.php?message=${encodeURIComponent(userInput)}&amp;id=${sessionId}&amp;type=json`;
+    
+    fetch(apiUrl)
+        .then(response =&gt; {
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.json(); // 假设API返回json格式数据
+        })
+        .then(data =&gt; {
+            // 隐藏加载指示器
+            document.getElementById('loadingIndicator').classList.remove('show');
+            
+            // 根据API的实际响应结构解析并显示回复
+            if (data &amp;&amp; data.data &amp;&amp; data.data.content) {
+                addMessage(data.data.content, 'bot');
+            } else {
+                console.error(&quot;Unexpected response from the API:&quot;, data);
+                addMessage(&quot;[错误] 无法获取回复&quot;, 'bot');
+            }
+        })
+        .catch(error =&gt; {
+            // 隐藏加载指示器
+            document.getElementById('loadingIndicator').classList.remove('show');
+            
+            console.error('Error:', error); // 记录错误信息
+            addMessage(`[错误] 无法获取回复: ${error.message}`, 'bot');
+        });
+        
+    // 清空输入框
+    document.getElementById('msgInput').value = '';
+}
+
+function addMessage(text, sender) {
+    var chatbox = document.getElementById('chatbox');
+    var messageElement = document.createElement('div');
+    messageElement.className = 'message ' + sender;
+    messageElement.textContent = text;  // 使用textContent而不是content
+    chatbox.appendChild(messageElement);
+    chatbox.scrollTop = chatbox.scrollHeight; // 自动滚动到底部
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<!-- more -->
+<p>好了，使用时记得在浏览器中安装CORS Everywhere插件哦👾</p>
+
+                </div>
+            </article>
+        </div>
+
+        
+            <div class="next-post">
+                <div class="next gt-c-content-color-first">下一篇</div>
+                <a href="https://blog.deep-sea.us.kg/zi-wo-jie-shao/" class="post-title gt-a-link">
+                    自我介绍
+                </a>
+            </div>
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first"><span id="jinrishici-sentence">正在加载今日诗词....</span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script></div>
+    <div class="social-container">
+        
+            
+                <a href="https://github.com/master-cx" target="_blank">
+                    <i class="fab fa-github gt-c-content-color-first"></i>
+                </a>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        Powered by <a href="https://github.com/master-cx" target="_blank">CX</a>
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://blog.deep-sea.us.kg/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

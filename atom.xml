@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.deep-sea.us.kg</id>
+    <title>CXの小栈</title>
+    <updated>2024-11-09T08:22:18.245Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://blog.deep-sea.us.kg"/>
+    <link rel="self" href="https://blog.deep-sea.us.kg/atom.xml"/>
+    <subtitle>&lt;span id=&quot;jinrishici-sentence&quot;&gt;正在加载今日诗词....&lt;/span&gt;
+&lt;script src=&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</subtitle>
+    <logo>https://blog.deep-sea.us.kg/images/avatar.png</logo>
+    <icon>https://blog.deep-sea.us.kg/favicon.ico</icon>
+    <rights>All rights reserved 2024, CXの小栈</rights>
+    <entry>
+        <title type="html"><![CDATA[关于我搭了个GPT4网站]]></title>
+        <id>https://blog.deep-sea.us.kg/guan-yu-wo-da-liao-ge-gpt4-wang-zhan/</id>
+        <link href="https://blog.deep-sea.us.kg/guan-yu-wo-da-liao-ge-gpt4-wang-zhan/">
+        </link>
+        <updated>2024-09-21T01:52:05.000Z</updated>
+    </entry>
+</feed>
